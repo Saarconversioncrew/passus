@@ -3,41 +3,120 @@
   label: Footer
 -->
 <footer class="footer">
-  {% dnd_area "footer"
-    label="Footer",
-    class="footer__container content-wrapper"
-  %}
-
-    {# Social follow and copyright #}
-
+    {% dnd_area "footer"
+      label="Footer",
+      class="footer__container content-wrapper"
+    %}
+  
     {% dnd_section %}
-      {% dnd_column %}
+      {% dnd_column
+        offset=0,
+        width=4
+      %}
         {% dnd_row %}
-          {% dnd_module path="../../modules/social-follow" %}
-            {% module_attribute "social_link" is_json=True %}
-              [
-                {"social_account": "facebook-f"},
-                {"social_account": "linkedin-in"},
-                {"social_account": "twitter"},
-                {"social_account": "instagram"}
-              ]
+          {% dnd_module
+            path="@hubspot/rich_text",
+            offset=0,
+            width=12
+          %}
+            {% module_attribute "html" %}
+              <h4 data-fontsize="18" data-lineheight="21.6px"><span style="color: #ffffff;">BLIK OP WERK</span></h4> 
             {% end_module_attribute %}
           {% end_dnd_module %}
         {% end_dnd_row %}
-        {% dnd_row
-          margin={
-            "top": 12,
-            "bottom": 12
-          }
-        %}
+        {% dnd_row %}
+          {% dnd_module
+            path="@hubspot/linked_image",
+            offset=0,
+            width=12,
+            horizontal_alignment="CENTER",
+            img={
+              "alt" : "placeholder_200x200",
+              "height" : 200,
+              "loading" : "lazy",
+              "size_type" : "auto",
+              "src" : "https://25742941.fs1.hubspotusercontent-eu1.net/hubfs/25742941/Blik-op-werk-keurmerk.png",
+              "width" : 200
+            }
+          %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row %}
           {% dnd_module
             path="@hubspot/rich_text",
-            html='<div style="text-align: center; font-size: 0.7rem;"><span>© {{ year }} All rights reserved.</span></div>'
+            offset=0,
+            width=12
+          %}
+            {% module_attribute "html" %}
+              <p><span style="color: #ffffff;">Passus Advies heeft sinds 2013 het Blik op Werk</span><br><span style="color: #ffffff;">keurmerk. Passus Advies is trots op het tevredenheidscijfer 8 gegeven door opdrachtgevers</span><br><span style="color: #ffffff;">en kandidaten.</span></p>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+      {% dnd_column
+        offset=4,
+        width=4
+      %}
+        {% dnd_row %}
+          {% dnd_module
+            path="@hubspot/rich_text",
+            offset=0,
+            width=12
+          %}
+            {% module_attribute "html" %}
+              <h4 data-fontsize="18" data-lineheight="21.6px"><span style="color: #ffffff;">CONTACT</span></h4>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row %}
+          {% dnd_module
+            path="@hubspot/rich_text",
+            offset=0,
+            width=12
+          %}
+            {% module_attribute "html" %}
+              <p>Baronieweg 3<br>5321 JV<br>Hedel</p>
+              <span><i aria-hidden="true"></i></span>
+              <p>073 - 62 32 980 </p>
+              <span style="color: #ffffff;"><a href="mailto:info@passusadvies.nl" style="color: #ffffff;">info@passusadvies.nl</a></span>
+              <p>KVK: 51361159 </p>
+              <p>BTW: NL8232.42.687.B01 </p>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+      {% end_dnd_column %}
+      {% dnd_column
+        offset=8,
+        width=4
+      %}
+        {% dnd_row %}
+          {% dnd_module
+            path="@hubspot/rich_text",
+            offset=0,
+            width=12
+          %}
+            {% module_attribute "html" %}
+              <h4 data-fontsize="18" data-lineheight="21.6px"><span style="color: #ffffff;">NIEUWSBRIEF&nbsp;</span></h4>
+            {% end_module_attribute %}
+          {% end_dnd_module %}
+        {% end_dnd_row %}
+        {% dnd_row %}
+          {% dnd_module
+            path="@hubspot/form",
+            offset=0,
+            width=12,
+            form={
+              "form_id" : "fd4f7766-1301-44fe-ad6f-276d01b39b62",
+              "form_type" : "HUBSPOT",
+              "message" : "Bedankt voor het verzenden van het formulier.",
+              "response_type" : "inline"
+            }
           %}
           {% end_dnd_module %}
         {% end_dnd_row %}
       {% end_dnd_column %}
     {% end_dnd_section %}
-
-  {% end_dnd_area %}
-</footer>
+    
+    {% end_dnd_area %}
+  </footer>
+  
