@@ -1,0 +1,17 @@
+.hs-input{
+    width: 100%;
+    padding: 0 1em;
+    outline: 0;
+    transition: all .2s ease;
+    border-width: 1px!important;
+    border-color: #e2e2e2 !important;
+    border-radius: 6px !important;
+    height: 40px;
+}
+.hs-input::placeholder{
+    font-size: 16px;
+    color: #9ea0a4 !important;
+}
+.input{
+    padding: 1rem 0;
+}

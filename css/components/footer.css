@@ -1,7 +1,61 @@
 footer .hs-image-widget {
-    width: 5.625rem;
+    width: 90px;
+    margin-bottom: 1rem;
 }
 footer p{
     color: #004c4c !important;
     margin:0 !important;
+    font-size: 15px;
 } 
+
+footer a{
+    margin:0 !important;
+    font-size: 15px;
+    color: #fff!important;
+} 
+footer .text-icon{
+    display: flex;
+}
+footer .fusion-li-icon{
+    font-size: 13px;
+    margin-right: 0.613rem;
+}
+footer .fa-file-alt:before {
+    content: "\f15c";
+}
+footer .dnd-section:nth-child(2){
+    background: #aa0306;
+}
+footer .dnd-section:nth-child(2) a{
+    color: rgba(255,255,255,0.8) !important;
+    font-size: 13px;
+}
+footer .dnd-section:nth-child(2) .row-fluid{
+    display: flex;
+    align-items: center;
+}
+footer .light-gray{
+    color: rgba(255,255,255,0.4) !important;
+    font-size: 13px;
+}
+footer .content-wrapper{
+    max-width: 100% !important;
+    padding: 0!important;
+}
+
+footer .social-links__icon,
+footer .social-links__icon:hover{
+    background-color: transparent;
+    margin-top: 5px;
+}
+footer .social-links__icon > svg{
+    height: 16px;
+}
+@media (max-width: 991.98px) { 
+    footer .dnd-section:nth-child(2) .row-fluid{
+        display: unset;
+    }
+    footer .align-center{
+        text-align: center;
+    }
+}

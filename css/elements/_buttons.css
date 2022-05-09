@@ -1,0 +1,20 @@
+.hs-button{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    border-color: #ffffff !important;
+    border-width: 0px!important;
+    border-radius: 5px 5px 5px 5px!important;
+    background: #799b40!important;
+    outline: 0;
+    padding: 17px 40px!important;
+    line-height: 21px;
+    font-size: 18px!important;
+    width: 100%;
+    font-weight: 700!important;
+    transition: all .2s;
+}
+.hs-button:hover{
+    cursor: pointer;
+}
